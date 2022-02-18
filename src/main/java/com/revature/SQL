@@ -1,0 +1,15 @@
+
+
+CREATE TABLE ers_user (
+user_id SERIAL PRIMARY KEY,
+ers_password varchar(50) UNIQUE NOT NULL,
+first varchar(50) NOT NULL,
+last varchar(50) NOT NULL,
+email varchar(255) UNIQUE NOT NULL,
+role_id int,
+FOREIGN KEY(role_id)
+        REFERENCES ers_role(role_id)
+
+);
+
+
