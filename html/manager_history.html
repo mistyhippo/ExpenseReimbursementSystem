@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Pending Reimbursement</title>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/homestyles.css" rel="stylesheet">
+    <!-- Fonts CSS-->
+    <link rel="stylesheet" href="../css/heading.css">
+    <link rel="stylesheet" href="../css/body.css">
+
+        <script>
+            function start() {
+
+                getResolvedReimbursementManager();
+            }
+        </script>
+</head>
+
+<body id="page-top" onload="start()">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="brandImage"
+                    src="../img/logo1.png" height="155" width="155" alt=""></a>
+            <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <!--  
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">HOME</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">LOGOUT</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">LOGIN</a>
+                        </li>
+                    -->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="manager_index.html">Home</a>
+                            <a class="dropdown-item" href="manager_pending.html">Pending Reimbursement</a>
+                            <a class="dropdown-item" href="manager_history.html">Reimbursement History</a>
+                            <a class="dropdown-item" href="../index.html">Logout</a>
+                        </div>
+                    </div>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <h4 class="mt-4">Reimbursement History</h4>
+
+            <div class="col-md-12 text-left">
+                <button type="button" class="btn btn-light"><a href="manager_index.html">Go Back</a></button>
+            </div>
+
+
+            <div class="table-responsive">
+                <br>
+                <table class="table table-light table-sm" id="managerResolvedReimbursement">
+                    <thead>
+                        <tr>
+                            <th>#User ID</th>
+                            <th>Reimb ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Status</th>
+                            <th>Submitted Date</th>
+                            <th>Title</th>
+                            <th>Reimbursement Type</th>
+                            <th>Amount</th>
+                            <th>Transaction Date</th>
+                            <th>Approved Date</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+
+
+
+
+        </div>
+    </header>
+
+
+    <!--Footer Section-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="mb-4">LOCATION</h4>
+                    <p class="pre-wrap lead mb-0">Offices in :</p>
+                    <p class="pre-wrap lead mb-0">Los Angeles, CA</p>
+                    <p class="pre-wrap lead mb-0">Las Vegas, NV</p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="mb-4">OUR SOCIALS</h4><a class="btn btn-outline-light btn-social mx-1"
+                        href="https://www.facebook.com/"><i class="fab fa-fw fa-facebook-f"></i></a><a
+                        class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/"><i
+                            class="fab fa-fw fa-twitter"></i></a><a class="btn btn-outline-light btn-social mx-1"
+                        href="https://www.linkedin.com/in/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="mb-4">ABOUT EXPENSE PORTAL</h4>
+                    <p class="pre-wrap lead mb-0">In these unprecedented times we want you to keep every dime</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <section class="copyright py-4 text-center text-white">
+        <div class="container"><small class="pre-wrap">Made by <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z" />
+                </svg> Valentina 2022</small></div>
+    </section>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed"><a
+            class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+                class="fa fa-chevron-up"></i></a></div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="../js/reimbursementScript.js"></script>
+    <script src="../js/managerScript.js"></script>
+</body>
+
+</html>

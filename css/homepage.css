@@ -1,0 +1,48 @@
+.list-inline-item{
+    margin-left:10px;
+}
+
+div.container{
+    margin-top: 100px;
+}
+#login:hover{
+    background-color: #7890b5;
+    color: #1d0707;
+}
+*{
+    font-family: Chalkduster;
+}
+#login{
+    background-color: #464646;
+    color: white;
+    font-weight: bold;
+    onMouseOver:"this.style.backgroundColor ='#09F'";
+    onMouseOver:"this.style.color= 'red'";
+    onMouseOut:"this.style.backgroundColor='#00F',this.style.color='#red'";
+}
+
+.navbar{
+    background-color: #dfeaf6;
+}
+.nav{
+    font-family: Courier;
+}
+.nav:hover {
+    background-color: #a9c3d7;
+    color: #296496;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.reimbType1{
+    width: 50px;
+    height: 40px;
+}
+.reimbType2{
+    width: 80px;
+    height: 40px;
+}
+.reimbType3{
+    width: 180px;
+    height: 40px
+}

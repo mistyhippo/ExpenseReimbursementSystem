@@ -1,0 +1,96 @@
+.list-inline-item{
+    margin-left:10px;
+}
+
+div.container{
+    margin-top: 100px;
+}
+#login:hover{
+    background-color: #7890b5;
+    color: #1d0707;
+}
+*{
+    font-family: Chalkduster;
+}
+#login{
+    background-color: #464646;
+    color: white;
+    font-weight: bold;
+    onMouseOver:"this.style.backgroundColor ='#09F'";
+    onMouseOver:"this.style.color= 'red'";
+    onMouseOut:"this.style.backgroundColor='#00F',this.style.color='#red'";
+}
+
+.navbar{
+    background-color: #dfeaf6;
+}
+.nav{
+    font-family: Courier;
+}
+.nav:hover {
+    background-color: #a9c3d7;
+    color: #296496;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.reimbType1{
+    width: 60px;
+    height: 50px;
+}
+.reimbType2{
+    width: 100px;
+    height: 50px;
+}
+.reimbType3, .reimbType4{
+    width: 250px;
+    height: 50px;
+}
+.reimbType5{
+    width: 80px;
+    height: 50px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+
+}
+.reimbType5:hover{
+    font-size: large;
+    font-style: italic;
+    background-color: #a9c3d7;
+    color: #264c1b;
+}
+#head1 {
+    width: 80px;
+    height: 50px;
+}
+#head2{
+    width: 200px;
+    height: 50px;
+}
+#head3{
+    width: 150px;
+    height: 50px;
+}
+#head4{
+    width: 150px;
+    height: 50px;
+}
+#head5{
+    width: 120px;
+    height: 50px;
+}
+#head6{
+    width: 80px;
+    height: 50px;
+}
+/*#userListTable{*/
+/*    border: 2px solid black;*/
+/*}*/
+.border{
+    border: 1px solid black;
+}
+.borderHead{
+    background-color: gray;
+    border: 1px solid black;
+}
