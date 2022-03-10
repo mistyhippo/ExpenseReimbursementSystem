@@ -25,13 +25,18 @@ To-do list:
 
 ## Getting Started
    
-(include git clone command)
+git clone https://github.com/mistyhippo/ExpenseReimbursementSystem.git
 (include all environment setup steps)
 
 > Be sure to include BOTH Windows and Unix command  
 > Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
 - All the `code` required to get started
 - Images of what it should look like
+- ![GitHub Logo](/images/logo.png)
+
+
+
+
 
 ## Usage
 
