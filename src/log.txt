@@ -1,0 +1,4 @@
+2022-02-06 20:51:27 INFO  LoggingSingleton:29 - Person: 
+Person{id=1, type=TEACHER, first='Bob', last='Ross', email='bob.ross@school.edu', password='password'} was created
+2022-02-07 14:26:07 INFO  LoggingSingleton:28 - Person: 
+Person{id=1, type=TEACHER, first='Bob', last='Ross', email='bob.ross@school.edu', password='password'} was created

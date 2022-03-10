@@ -1,0 +1,108 @@
+create table ers_users(
+	user_id serial primary key,
+	email varchar(100) unique not null,
+	first_name varchar(50),
+	last_name varchar(50),
+	role integer,
+	password varchar(50)
+);
+
+
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name1@revature.net","name1","last1","2","name1");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name2@revature.net","name2","last2","2","name2");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name3@revature.net","name3","last3","1","name3");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name4@revature.net","name4","last4","1","name4");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name5@revature.net","name5","last5","1","name5");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name6@revature.net","name6","last6","1","name6");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name7@revature.net","name7","last7","1","name7");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name8@revature.net","name8","last8","1","name8");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name9@revature.net","name9","last9","1","name9");
+insert into ers_users(email,first_name,last_name,ROLE,password) values ("name10@revature.net","name10","last10","1","name10");
+
+
+
+
+
+CREATE TABLE ers_employee_manager(
+	employee_id integer REFERENCES ers_users,
+	manager_id integer REFERENCES ers_users,
+	primary key(employee_id,manager_id)
+);
+
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(3,1);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(4,1);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(5,1);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(6,1);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(7,2);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(8,2);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(9,2);
+INSERT INTO ers_employee_manager(employee_id, manager_id) VALUES(10,2);
+
+
+
+CREATE TABLE ers_reimbursement_status(
+	status_id serial PRIMARY KEY,
+	status varchar(50),
+	description varchar(100)
+);
+
+INSERT INTO ers_reimbursement_status(status,description) VALUES("CREATED","User just saved the reimbursement");
+INSERT INTO ers_reimbursement_status(status,description) VALUES("PENDING","User submited the reimbursement");
+INSERT INTO ers_reimbursement_status(status,description) VALUES("APPROVED","Manager approved the reimbursement");
+INSERT INTO ers_reimbursement_status(status,description) VALUES("DENIED","Manager deinied the reimbursement");
+
+
+
+CREATE TABLE ers_reimbursement_type(
+	reimbursement_type_id serial PRIMARY KEY,
+	reimbursement_type varchar(50),
+);
+
+INSERT INTO ers_reimbursement_type(reimbursement_type) VALUES("LODGING");
+INSERT INTO ers_reimbursement_type(reimbursement_type) VALUES("TRAVEL");
+INSERT INTO ers_reimbursement_type(reimbursement_type) VALUES("FOOD");
+INSERT INTO ers_reimbursement_type(reimbursement_type) VALUES("OTHER");
+
+
+CREATE TABLE ers_reimbursement(
+	reimnbursement_id serial PRIMARY KEY,
+	user_id integer REFERENCES ers_users,
+	date_submitted DATE,
+	status_id integer REFERENCES ers_reimbursement_status,
+	manager_id integer REFERENCES ers_users,
+	date_approved_denied DATE,
+	title varchar(50),
+	description varchar(150)
+);
+
+drop table ers_reimbursement cascade;
+
+
+CREATE TABLE ers_reimbursement_history(
+	reimbursement_history_id  serial PRIMARY key,
+	user_id integer REFERENCES ers_users ,
+	reimbursement_id integer REFERENCES ers_reimbursement,
+	create_date DATE,
+	date_submitted DATE,
+	status_id integer REFERENCES ers_reimbursement_status,
+	date_approved_denied DATE
+);
+
+
+
+CREATE TABLE ers_reimbursement_items(
+	reimbursement_item_id serial PRIMARY KEY,
+	reimbursement_id integer REFERENCES ers_reimbursement,
+	reimbursement_type_id integer REFERENCES ers_reimbursement_type,
+	description varchar(150),
+	cost NUMERIC (3,2),
+	transaction_date DATE,
+	receipt varchar(150)
+);
+
+
+
+
+
+
+

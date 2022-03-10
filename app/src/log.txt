@@ -1,0 +1,60 @@
+2022-01-03 11:30:31 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:30:31 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:34:47 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:34:47 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:34:47 INFO  LoggingSingleton:32 - Person: Person{id=1, type=TEACHER, first='Test', last='Teacher', email='email', password='password'} 
+ was assigned to the course: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=Person{id=1, type=TEACHER, first='Test', last='Teacher', email='email', password='password'}, topics=[], students=[]}
+2022-01-03 11:34:47 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:36:50 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:36:50 WARN  LoggingSingleton:28 - Person: Person{id=1, type=STUDENT, first='Test', last='Teacher', email='email', password='password'} 
+ who is not a teacher was assigned to a course
+2022-01-03 11:36:50 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:36:50 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:36:50 INFO  LoggingSingleton:32 - Person: Person{id=1, type=TEACHER, first='Test', last='Teacher', email='email', password='password'} 
+ was assigned to the course: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=Person{id=1, type=TEACHER, first='Test', last='Teacher', email='email', password='password'}, topics=[], students=[]}
+2022-01-03 11:36:50 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:39:48 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:39:48 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:39:48 WARN  LoggingSingleton:28 - Person: Person{id=1, type=STUDENT, first='Test', last='Teacher', email='email', password='password'} 
+ who is not a teacher was assigned to a course
+2022-01-03 11:39:48 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:39:48 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:39:48 INFO  LoggingSingleton:45 - New topics added to course: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[Testing, Testing, More Testing], students=[]}
+2022-01-03 11:39:48 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-03 11:39:48 INFO  LoggingSingleton:32 - Person: Person{id=1, type=TEACHER, first='Test', last='Teacher', email='email', password='password'} 
+ was assigned to the course: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=Person{id=1, type=TEACHER, first='Test', last='Teacher', email='email', password='password'}, topics=[], students=[]}
+2022-01-03 11:39:48 INFO  LoggingSingleton:22 - New Course created: Course{courseId=1, subject='Testing', number=100, name='Intro to Testing', teacher=null, topics=[], students=[]}
+2022-01-04 16:58:54 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=0, student=null, grade=0.0, done=false, pastDue=false, due=null}
+2022-01-04 17:03:21 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:07:20 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:07:52 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:10:00 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:11:26 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:11:46 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:35:33 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:35:33 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:40:16 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:40:16 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=false, pastDue=false, due=2022-01-05}
+2022-01-04 17:40:16 INFO  LoggingSingleton:50 - Assignment: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=true, pastDue=false, due=2022-01-05} 
+ Was submitted on time
+2022-01-04 17:40:16 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:42:39 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:42:39 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=false, pastDue=false, due=2022-01-03}
+2022-01-04 17:42:39 WARN  LoggingSingleton:45 - Assignment: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=true, pastDue=true, due=2022-01-03} 
+ Was submitted late
+2022-01-04 17:42:39 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=false, pastDue=false, due=2022-01-05}
+2022-01-04 17:42:39 INFO  LoggingSingleton:50 - Assignment: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=true, pastDue=false, due=2022-01-05} 
+ Was submitted on time
+2022-01-04 17:42:39 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:46:57 INFO  LoggingSingleton:64 - Assignment: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=80.0, done=true, pastDue=true, due=2022-01-04} 
+ Was given the grade: 80.0
+2022-01-04 17:46:57 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:46:57 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=false, pastDue=false, due=2022-01-03}
+2022-01-04 17:46:57 WARN  LoggingSingleton:45 - Assignment: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=true, pastDue=true, due=2022-01-03} 
+ Was submitted late
+2022-01-04 17:46:57 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=false, pastDue=false, due=2022-01-05}
+2022-01-04 17:46:57 INFO  LoggingSingleton:50 - Assignment: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=true, pastDue=false, due=2022-01-05} 
+ Was submitted on time
+2022-01-04 17:46:57 INFO  LoggingSingleton:26 - New assignment created: Assignment{assignmentId=1, student=Person{id=1, type=STUDENT, first='first', last='last', email='email', password='password'}, grade=0.0, done=false, pastDue=false, due=2022-01-04}
+2022-01-04 17:46:57 INFO  LoggingSingleton:64 - Assignment: Assignment{assignmentId=1, student=Person{id=0, type=null, first='null', last='null', email='null', password='null'}, grade=100.0, done=true, pastDue=false, due=2022-01-04} 
+ Was given the grade: 100.0
